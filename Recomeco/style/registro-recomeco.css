@@ -1,0 +1,261 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    background-color: #121212;
+    overflow-x: hidden;
+    align-items: flex-start;
+}
+
+body > div
+{
+    margin: 30px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+form.Formulario-Shallom
+{
+    background-color: #15172B;
+    border-radius: 35px;
+    padding: 15px;
+    color: white;
+}
+
+form.Formulario-Shallom > h1
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    text-shadow: 0px 0px 10px #b1e4ff9c;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+form.Formulario-Shallom > p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+form.Formulario-Shallom > div
+{
+    margin: 7px;
+    background-color: #15172B;
+}
+
+form.Formulario-Shallom > div > input, form.Formulario-Shallom > div > select
+{
+    background: #303245;
+    border: none;
+    width: 100%;
+    height: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+form.Formulario-Shallom > div > input
+{
+    padding: 5px;
+}
+
+form.Formulario-Shallom > div > input:focus
+{
+    outline: none;
+}
+
+form.Formulario-Shallom > div > label
+{
+    color: #e95555;
+    position: relative;
+    background-color: #303245;
+    top: 1px;
+    left: 10px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form.Formulario-Shallom input.submit
+{
+    transition: .8s;
+    font-size: 20px;
+    background-color: #127acf;
+    color: white;
+}
+
+form.Formulario-Shallom input.submit:hover
+{
+    font-size: 25px;
+    transition: .8s;
+    box-shadow: 0px 0px 20px #127acfb1;
+    background-color: #303245;
+    border: 1px solid #127acf;
+}
+
+.my-form
+{
+    --_clr-primary: #666;
+    --_clr-hover: #f33195;
+    --_clr-checked: #127acf;
+}
+.my-form > div
+{
+    --_clr-current: var(--_clr-primary);
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.my-form > div + div
+{
+    margin-block-start: 0.5rem;
+}
+.my-form label
+{
+    cursor: pointer;
+    color: var(--_clr-current);
+    transition: color 150ms ease-in-out;
+}
+
+.my-form input[type="checkbox"]
+{
+    appearance: none;
+    outline: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    aspect-ratio: 1;
+    padding: 0.25rem;
+    background: transparent;
+    border: 1px solid var(--_clr-current);
+    border-radius: 2px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+.my-form input[type="checkbox"]::after
+{
+    content: "\2714";
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+    color: var(--_clr-checked);
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.my-form label:hover,
+.my-form input[type="checkbox"]:focus-visible,
+.my-form input[type="checkbox"]:focus-visible + label,
+.my-form input[type="checkbox"]:hover,
+.my-form input[type="checkbox"]:hover + label
+{
+    --_clr-current: var(--_clr-hover);
+}
+.my-form input[type="checkbox"]:focus-visible::after,
+.my-form input[type="checkbox"]:hover::after
+{
+    opacity: 0.5;
+    color: var(--_clr-hover);
+}
+
+.my-form input[type="checkbox"]:checked + label:not(:hover),
+.my-form input[type="checkbox"]:checked:not(:hover)
+{
+    --_clr-current: var(--_clr-checked);
+}
+.my-form input[type="checkbox"]:checked::after
+{
+    opacity: 1;
+}
+
+.my-form
+{
+    --_clr-primary: #666;
+    --_clr-hover: #f33195;
+    --_clr-checked: #127acf;
+}
+.my-form > div
+{
+    --_clr-current: var(--_clr-primary);
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.my-form > div + div
+{
+    margin-block-start: 0.5rem;
+}
+.my-form label
+{
+    cursor: pointer;
+    color: var(--_clr-current);
+    transition: color 150ms ease-in-out;
+}
+
+.my-form input[type="checkbox"]
+{
+    appearance: none;
+    outline: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    aspect-ratio: 1;
+    padding: 0.25rem;
+    background: transparent;
+    border: 1px solid var(--_clr-current);
+    border-radius: 2px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+.my-form input[type="checkbox"]::after
+{
+    content: "\2714";
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+    color: var(--_clr-checked);
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.my-form label:hover,
+.my-form input[type="checkbox"]:focus-visible,
+.my-form input[type="checkbox"]:focus-visible + label,
+.my-form input[type="checkbox"]:hover,
+.my-form input[type="checkbox"]:hover + label
+{
+    --_clr-current: var(--_clr-hover);
+}
+.my-form input[type="checkbox"]:focus-visible::after,
+.my-form input[type="checkbox"]:hover::after
+{
+    opacity: 0.5;
+    color: var(--_clr-hover);
+}
+
+.my-form input[type="checkbox"]:checked + label:not(:hover),
+.my-form input[type="checkbox"]:checked:not(:hover)
+{
+    --_clr-current: var(--_clr-checked);
+}
+.my-form input[type="checkbox"]:checked::after
+{
+    opacity: 1;
+}
